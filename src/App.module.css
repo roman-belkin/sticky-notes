@@ -1,0 +1,84 @@
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f3efe6;
+}
+
+.header {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #fffdf8;
+  border-bottom: 1px solid #e4dccb;
+}
+
+.titles {
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.hint {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #78716c;
+}
+
+.status {
+  margin: 0;
+  min-width: 7.5rem;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  color: #57534e;
+}
+
+.statusError {
+  color: #b91c1c;
+}
+
+.loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #57534e;
+  font-size: 16px;
+}
+
+.addButton {
+  flex: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: #1f2937;
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background: #111827;
+}
+
+.addButton:focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+.addButton:disabled {
+  opacity: 0.55;
+  cursor: default;
+}

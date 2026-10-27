@@ -1,0 +1,24 @@
+.board {
+  position: relative;
+  isolation: isolate;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  cursor: crosshair;
+  touch-action: none;
+  user-select: none;
+  background-color: #e9e3d6;
+  background-image: radial-gradient(#ddd4c4 1.1px, transparent 1.1px);
+  background-size: 22px 22px;
+}
+
+.draft {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px dashed #c4a035;
+  border-radius: 6px;
+  background: rgba(255, 236, 170, 0.5);
+  pointer-events: none;
+  z-index: 1000002;
+}
